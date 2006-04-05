@@ -1,3 +1,11 @@
+libdrm (2.0.1-1) unstable; urgency=high
+
+  * New upstream release
+    - Fixes a pathological hash table smash discovered by the Coverity scanner
+    - updates the installed header files for various new #defines
+
+ -- David Nusinow <dnusinow@debian.org>  Tue,  4 Apr 2006 23:46:05 -0400
+
 libdrm (2.0-1) experimental; urgency=low
 
   * First upload to Debian

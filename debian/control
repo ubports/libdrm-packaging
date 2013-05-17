@@ -13,7 +13,7 @@ Build-Depends:
  libpthread-stubs0-dev,
  libudev-dev [linux-any],
  libpciaccess-dev,
- valgrind,
+ valgrind [amd64 armel armhf i386 mips mipsel powerpc s390x],
 Standards-Version: 3.9.4
 Section: libs
 Vcs-Git: git://git.debian.org/git/pkg-xorg/lib/libdrm

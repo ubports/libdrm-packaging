@@ -1,8 +1,11 @@
-libdrm (2.4.45-3) UNRELEASED; urgency=low
+libdrm (2.4.45-3) unstable; urgency=low
+
+  * Team upload.
 
   * debian/patches/03_build_against_librt.diff:
     + Removed, no longer needed with our current glibc version.
       Thanks to Julien Cristau for pointing it out.
+  * Upload to unstable.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Thu, 06 Jun 2013 23:13:12 +0200
 

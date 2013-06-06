@@ -1,3 +1,11 @@
+libdrm (2.4.45-3) UNRELEASED; urgency=low
+
+  * debian/patches/03_build_against_librt.diff:
+    + Removed, no longer needed with our current glibc version.
+      Thanks to Julien Cristau for pointing it out.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Thu, 06 Jun 2013 23:13:12 +0200
+
 libdrm (2.4.45-2) experimental; urgency=low
 
   [ Sven Joachim ]

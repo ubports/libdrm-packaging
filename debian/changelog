@@ -1,3 +1,9 @@
+libdrm (2.4.45-4) UNRELEASED; urgency=low
+
+  * Build libdrm-intel1 on x32 (Closes: #712515).
+
+ -- Sven Joachim <svenjoac@gmx.de>  Sun, 16 Jun 2013 20:40:09 +0200
+
 libdrm (2.4.45-3) unstable; urgency=low
 
   * Team upload.

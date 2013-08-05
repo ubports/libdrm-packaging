@@ -1,11 +1,12 @@
-libdrm (2.4.46-1) UNRELEASED; urgency=low
+libdrm (2.4.46-1) unstable; urgency=low
 
+  [ Sven Joachim ]
   * New upstream release.
   * Bump libdrm2's and libdrm-intel1's symbols and shlibs.
   * Build libdrm-intel1 on x32 (Closes: #712515).
   * Disable silent rules.
 
- -- Sven Joachim <svenjoac@gmx.de>  Sun, 16 Jun 2013 20:40:09 +0200
+ -- Maarten Lankhorst <maarten.lankhorst@ubuntu.com>  Mon, 05 Aug 2013 13:44:46 +0200
 
 libdrm (2.4.45-3) unstable; urgency=low
 

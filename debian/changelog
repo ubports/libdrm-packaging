@@ -1,8 +1,8 @@
-libdrm (2.4.46-2) UNRELEASED; urgency=low
+libdrm (2.4.46-2) unstable; urgency=low
 
   * Build libdrm-radeon1 on kfreebsd (closes: #684593).
 
- -- Julien Cristau <jcristau@debian.org>  Wed, 21 Aug 2013 19:34:05 +0200
+ -- Julien Cristau <jcristau@debian.org>  Wed, 21 Aug 2013 21:05:44 +0200
 
 libdrm (2.4.46-1) unstable; urgency=low
 

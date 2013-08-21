@@ -14,6 +14,7 @@ Build-Depends:
  libudev-dev [linux-any],
  libpciaccess-dev,
  valgrind [amd64 armel armhf i386 mips mipsel powerpc s390x],
+ libbsd-dev [kfreebsd-any],
 Standards-Version: 3.9.4
 Section: libs
 Vcs-Git: git://git.debian.org/git/pkg-xorg/lib/libdrm
@@ -25,7 +26,7 @@ Architecture: any
 Depends:
  libdrm2 (= ${binary:Version}),
  libdrm-intel1 (= ${binary:Version}) [amd64 i386 kfreebsd-amd64 kfreebsd-i386 x32],
- libdrm-radeon1 (= ${binary:Version}) [linux-any],
+ libdrm-radeon1 (= ${binary:Version}),
  libdrm-nouveau2 (= ${binary:Version}) [linux-any],
  libdrm-omap1 (= ${binary:Version}) [any-arm],
  libkms1 (= ${binary:Version}) [linux-any],
@@ -145,7 +146,7 @@ Description: Userspace interface to nouveau-specific kernel DRM -- debugging sym
 
 Package: libdrm-radeon1
 Section: libs
-Architecture: linux-any
+Architecture: any
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
@@ -160,7 +161,7 @@ Description: Userspace interface to radeon-specific kernel DRM services -- runti
 Package: libdrm-radeon1-dbg
 Section: debug
 Priority: extra
-Architecture: linux-any
+Architecture: any
 Depends:
  libdrm-radeon1 (= ${binary:Version}),
  ${misc:Depends},

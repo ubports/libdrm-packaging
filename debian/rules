@@ -8,6 +8,8 @@
 DEB_HOST_ARCH_OS  ?= $(shell dpkg-architecture -qDEB_HOST_ARCH_OS)
 DEB_HOST_ARCH_CPU ?= $(shell dpkg-architecture -qDEB_HOST_ARCH_CPU)
 
+confflags = --enable-radeon
+
 # Linux vs. the rest:
 ifeq (linux, $(DEB_HOST_ARCH_OS))
 	confflags += --enable-udev
@@ -16,8 +18,6 @@ ifeq (linux, $(DEB_HOST_ARCH_OS))
 	confflags += --enable-vmwgfx
 	confflags += --enable-nouveau
 	NOUVEAU = yes
-	confflags += --enable-radeon
-	RADEON = yes
 else
 	confflags += --disable-udev
 	confflags += --disable-libkms
@@ -25,8 +25,8 @@ else
 	confflags += --disable-vmwgfx
 	confflags += --disable-nouveau
 	NOUVEAU = no
-	confflags += --disable-radeon
-	RADEON = no
+	# kfreebsd mangles freebsd's sys/types.h
+	confflags += CFLAGS="$(shell pkg-config --cflags libbsd-overlay)"
 endif
 
 # Intel is only on x86:
@@ -76,9 +76,7 @@ endif
 ifeq ($(NOUVEAU), yes)
 	dh_strip -plibdrm-nouveau2 --dbg-package=libdrm-nouveau2-dbg
 endif
-ifeq ($(RADEON), yes)
 	dh_strip -plibdrm-radeon1 --dbg-package=libdrm-radeon1-dbg
-endif
 ifeq ($(OMAP), yes)
 	dh_strip -plibdrm-omap1 --dbg-package=libdrm-omap1-dbg
 endif
@@ -95,9 +93,7 @@ endif
 ifeq ($(NOUVEAU), yes)
 	dh_makeshlibs -plibdrm-nouveau2 -V'libdrm-nouveau2 (>= 2.4.38)' -- -c4
 endif
-ifeq ($(RADEON), yes)
 	dh_makeshlibs -plibdrm-radeon1 -V'libdrm-radeon1 (>= 2.4.39)' -- -c4
-endif
 ifeq ($(OMAP), yes)
 	dh_makeshlibs -plibdrm-omap1 -V'libdrm-omap1 (>= 2.4.38)' -- -c4
 endif

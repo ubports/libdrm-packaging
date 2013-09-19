@@ -1,3 +1,10 @@
+libdrm (2.4.46-3) UNRELEASED; urgency=low
+
+  * Make drmCheckModesettingSupported work on FreeBSD.  Thanks, Christoph
+    Egger!
+
+ -- Julien Cristau <jcristau@debian.org>  Thu, 19 Sep 2013 21:13:52 +0200
+
 libdrm (2.4.46-2) unstable; urgency=low
 
   * Build libdrm-radeon1 on kfreebsd (closes: #684593).

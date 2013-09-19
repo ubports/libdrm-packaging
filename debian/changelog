@@ -2,6 +2,7 @@ libdrm (2.4.46-3) UNRELEASED; urgency=low
 
   * Make drmCheckModesettingSupported work on FreeBSD.  Thanks, Christoph
     Egger!
+  * Stop building libkms.
 
  -- Julien Cristau <jcristau@debian.org>  Thu, 19 Sep 2013 21:13:52 +0200
 

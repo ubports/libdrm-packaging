@@ -1,4 +1,4 @@
-libdrm (2.4.46-4) UNRELEASED; urgency=low
+libdrm (2.4.46-4) unstable; urgency=low
 
   [ Colin Watson ]
   * Declare libdrm-dev Multi-Arch: same.
@@ -7,7 +7,7 @@ libdrm (2.4.46-4) UNRELEASED; urgency=low
   * Cherry-pick upstream patch to fix relocations for all cards <nv50.
   * Do not require valgrind on armel.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Wed, 23 Oct 2013 15:39:53 +0100
+ -- Maarten Lankhorst <maarten.lankhorst@ubuntu.com>  Thu, 07 Nov 2013 14:11:38 +0100
 
 libdrm (2.4.46-3) unstable; urgency=low
 

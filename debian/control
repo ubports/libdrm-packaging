@@ -13,7 +13,7 @@ Build-Depends:
  libpthread-stubs0-dev,
  libudev-dev [linux-any],
  libpciaccess-dev,
- valgrind [amd64 armel armhf i386 mips mipsel powerpc s390x],
+ valgrind [amd64 armhf i386 mips mipsel powerpc s390x],
  libbsd-dev [kfreebsd-any],
 Standards-Version: 3.9.4
 Section: libs

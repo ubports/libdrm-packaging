@@ -5,6 +5,7 @@ libdrm (2.4.46-4) UNRELEASED; urgency=low
 
   [ Maarten Lankhorst ]
   * Cherry-pick upstream patch to fix relocations for all cards <nv50.
+  * Do not require valgrind on armel.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Wed, 23 Oct 2013 15:39:53 +0100
 

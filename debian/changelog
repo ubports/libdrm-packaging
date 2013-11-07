@@ -1,3 +1,13 @@
+libdrm (2.4.46-4) UNRELEASED; urgency=low
+
+  [ Colin Watson ]
+  * Declare libdrm-dev Multi-Arch: same.
+
+  [ Maarten Lankhorst ]
+  * Cherry-pick upstream patch to fix relocations for all cards <nv50.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 23 Oct 2013 15:39:53 +0100
+
 libdrm (2.4.46-3) unstable; urgency=low
 
   * Make drmCheckModesettingSupported work on FreeBSD.  Thanks, Christoph

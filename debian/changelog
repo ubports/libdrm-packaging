@@ -1,8 +1,8 @@
-libdrm (2.4.49-1) UNRELEASED; urgency=low
+libdrm (2.4.49-1) unstable; urgency=low
 
   * New upstream release.
 
- -- Maarten Lankhorst <maarten.lankhorst@ubuntu.com>  Mon, 25 Nov 2013 11:26:28 +0100
+ -- Maarten Lankhorst <maarten.lankhorst@ubuntu.com>  Mon, 25 Nov 2013 11:36:32 +0100
 
 libdrm (2.4.46-4) unstable; urgency=low
 

@@ -1,3 +1,11 @@
+libdrm (2.4.49-2) UNRELEASED; urgency=low
+
+  * Cherry-pick a commit from upstream to fix a radeonsi regression.
+    - c8a437f4c76: radeon: Update unaligned offset for 2D->1D tiling
+      transition on SI
+
+ -- Maarten Lankhorst <maarten.lankhorst@ubuntu.com>  Tue, 26 Nov 2013 15:20:22 +0100
+
 libdrm (2.4.49-1) unstable; urgency=low
 
   * New upstream release.

@@ -1,7 +1,6 @@
 Source: libdrm
 Priority: optional
 Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
-Uploaders: Cyril Brulebois <kibi@debian.org>
 Build-Depends:
  debhelper (>= 9),
  dh-autoreconf,

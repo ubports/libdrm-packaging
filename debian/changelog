@@ -1,4 +1,4 @@
-libdrm (2.4.52-1) UNRELEASED; urgency=medium
+libdrm (2.4.52-1) unstable; urgency=medium
 
   [ Julien Cristau ]
   * Remove Cyril Brulebois from Uploaders.
@@ -6,7 +6,7 @@ libdrm (2.4.52-1) UNRELEASED; urgency=medium
   [ Maarten Lankhorst ]
   * New upstream release.
 
- -- Julien Cristau <jcristau@debian.org>  Mon, 20 Jan 2014 13:51:56 +0100
+ -- Maarten Lankhorst <maarten.lankhorst@ubuntu.com>  Fri, 24 Jan 2014 13:41:57 +0100
 
 libdrm (2.4.51-1) unstable; urgency=medium
 

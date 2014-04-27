@@ -1,9 +1,10 @@
-libdrm (2.4.53-1) UNRELEASED; urgency=medium
+libdrm (2.4.53-1) unstable; urgency=medium
 
+  [ Timo Aaltonen ]
   * New upstream release.
     - 02_kbsd_modeset.diff dropped, upstream
 
- -- Timo Aaltonen <tjaalton@ubuntu.com>  Fri, 11 Apr 2014 18:41:57 +0300
+ -- Julien Cristau <jcristau@debian.org>  Sun, 27 Apr 2014 22:15:55 +0200
 
 libdrm (2.4.52-1) unstable; urgency=medium
 

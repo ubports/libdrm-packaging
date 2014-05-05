@@ -1,6 +1,7 @@
 libdrm (2.4.54-1) UNRELEASED; urgency=medium
 
   * New upstream release.
+  * Add 02_fix_qxl_drm_h.diff (Closes: #746807).
 
  -- Andreas Boll <andreas.boll.dev@gmail.com>  Mon, 05 May 2014 23:22:29 +0200
 

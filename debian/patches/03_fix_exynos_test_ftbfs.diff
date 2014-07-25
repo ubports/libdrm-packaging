@@ -1,0 +1,23 @@
+commit a328b02c1d0b2e19e3587221aa290f05e33baefe
+Author: Maarten Lankhorst <maarten.lankhorst@canonical.com>
+Date:   Fri Jul 25 11:22:24 2014 +0200
+
+    exynos: do not build fimg2d_test when building without libkms support.
+    
+    This prevents a build failure.
+    
+    Signed-off-by: Maarten Lankhorst <maarten.lankhorst@canonical.com>
+
+--- a/tests/exynos/Makefile.am
++++ b/tests/exynos/Makefile.am
+@@ -4,8 +4,10 @@
+ 	-I $(top_srcdir)/exynos \
+ 	-I $(top_srcdir)
+ 
++if HAVE_LIBKMS
+ noinst_PROGRAMS = \
+ 	exynos_fimg2d_test
++endif
+ 
+ exynos_fimg2d_test_LDADD = \
+ 	$(top_builddir)/libdrm.la \

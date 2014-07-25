@@ -29,6 +29,7 @@ Depends:
  libdrm-nouveau2 (= ${binary:Version}) [linux-any],
  libdrm-omap1 (= ${binary:Version}) [any-arm],
  libdrm-freedreno1 (= ${binary:Version}) [any-arm],
+ libdrm-exynos1 (= ${binary:Version}) [any-arm],
  ${misc:Depends},
 Multi-Arch: same
 Replaces:
@@ -233,3 +234,33 @@ Description: Userspace interface to omap-specific kernel DRM services -- debuggi
  Linux to provide hardware-accelerated OpenGL drivers.
  .
  This package provides the debugging symbols for the libdrm-freedreno1 package.
+
+Package: libdrm-exynos1
+Section: libs
+Architecture: any-arm
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Pre-Depends: ${misc:Pre-Depends}
+Multi-Arch: same
+Description: Userspace interface to omap-specific kernel DRM services -- runtime
+ This library implements the userspace interface to the omap-specific kernel
+ DRM services.  DRM stands for "Direct Rendering Manager", which is the
+ kernelspace portion of the "Direct Rendering Infrastructure" (DRI). The DRI is
+ currently used on Linux to provide hardware-accelerated OpenGL drivers.
+
+Package: libdrm-exynos1-dbg
+Section: debug
+Priority: extra
+Architecture: any-arm
+Depends:
+ libdrm-exynos1 (= ${binary:Version}),
+ ${misc:Depends},
+Multi-Arch: same
+Description: Userspace interface to omap-specific kernel DRM services -- debugging symbols
+ This library implements the userspace interface to the kernel DRM services.
+ DRM stands for "Direct Rendering Manager", which is the kernelspace portion
+ of the "Direct Rendering Infrastructure" (DRI). The DRI is currently used on
+ Linux to provide hardware-accelerated OpenGL drivers.
+ .
+ This package provides the debugging symbols for the libdrm-exynos1 package.

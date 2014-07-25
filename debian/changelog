@@ -1,3 +1,9 @@
+libdrm (2.4.54-2) UNRELEASED; urgency=medium
+
+  * Enable building freedreno on arm. (Closes: #741509)
+
+ -- Maarten Lankhorst <maarten.lankhorst@ubuntu.com>  Fri, 25 Jul 2014 10:24:34 +0200
+
 libdrm (2.4.54-1) unstable; urgency=medium
 
   [ Andreas Boll ]

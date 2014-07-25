@@ -40,14 +40,16 @@ else
 	confflags += --disable-intel
 endif
 
-# Omap is only on arm
+# Omap and freedreno are only on arm
 ifneq (,$(filter arm,$(DEB_HOST_ARCH_CPU)))
-	OMAP = yes
+	ARM = yes
 endif
-ifeq ($(OMAP), yes)
+ifeq ($(ARM), yes)
 	confflags += --enable-omap-experimental-api
+	confflags += --enable-freedreno-experimental-api
 else
 	confflags += --disable-omap-experimental-api
+	confflags += --disable-freedreno-experimental-api
 endif
 
 ###
@@ -76,8 +78,9 @@ ifeq ($(NOUVEAU), yes)
 	dh_strip -plibdrm-nouveau2 --dbg-package=libdrm-nouveau2-dbg
 endif
 	dh_strip -plibdrm-radeon1 --dbg-package=libdrm-radeon1-dbg
-ifeq ($(OMAP), yes)
+ifeq ($(ARM), yes)
 	dh_strip -plibdrm-omap1 --dbg-package=libdrm-omap1-dbg
+	dh_strip -plibdrm-freedreno1 --dbg-package=libdrm-freedreno1-dbg
 endif
 	dh_strip -s --remaining-packages
 
@@ -90,8 +93,9 @@ ifeq ($(NOUVEAU), yes)
 	dh_makeshlibs -plibdrm-nouveau2 -V'libdrm-nouveau2 (>= 2.4.38)' -- -c4
 endif
 	dh_makeshlibs -plibdrm-radeon1 -V'libdrm-radeon1 (>= 2.4.39)' -- -c4
-ifeq ($(OMAP), yes)
+ifeq ($(ARM), yes)
 	dh_makeshlibs -plibdrm-omap1 -V'libdrm-omap1 (>= 2.4.38)' -- -c4
+	dh_makeshlibs -plibdrm-freedreno1 -V'libdrm-freedreno1' -- -c4
 endif
 
 %:

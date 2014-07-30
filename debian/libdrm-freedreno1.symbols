@@ -1,8 +1,4 @@
 libdrm_freedreno.so.1 libdrm-freedreno1 #MINVER#
-| libdrm-freedreno-private
- is_kgsl_pipe@Base 0 1
- (regex)"^msm_.*@Base" 0 1
- (regex)"^kgsl_.*@Base" 0 1
  fd_bo_cpu_fini@Base 0
  fd_bo_cpu_prep@Base 0
  fd_bo_del@Base 0

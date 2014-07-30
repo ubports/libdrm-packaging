@@ -1,4 +1,4 @@
-libdrm (2.4.55-1) UNRELEASED; urgency=medium
+libdrm (2.4.56-1) UNRELEASED; urgency=medium
 
   * New upstream release.
   * Enable building freedreno and exynos on arm. (Closes: #741509)

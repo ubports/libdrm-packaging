@@ -213,7 +213,7 @@ Depends:
  ${misc:Depends},
 Pre-Depends: ${misc:Pre-Depends}
 Multi-Arch: same
-Description: Userspace interface to msm/kgsl-specific kernel DRM services -- runtime
+Description: Userspace interface to msm/kgsl kernel DRM services -- runtime
  This library implements the userspace interface to the kernel DRM services.
  DRM stands for "Direct Rendering Manager", which is the kernelspace portion
  of the "Direct Rendering Infrastructure" (DRI). The DRI is currently used on
@@ -227,7 +227,7 @@ Depends:
  libdrm-freedreno1 (= ${binary:Version}),
  ${misc:Depends},
 Multi-Arch: same
-Description: Userspace interface to msm/kgsl-specific kernel DRM services -- debugging symbols
+Description: Userspace interface to msm/kgsl kernel DRM services -- debugging symbols
  This library implements the userspace interface to the kernel DRM services.
  DRM stands for "Direct Rendering Manager", which is the kernelspace portion
  of the "Direct Rendering Infrastructure" (DRI). The DRI is currently used on

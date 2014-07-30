@@ -213,11 +213,11 @@ Depends:
  ${misc:Depends},
 Pre-Depends: ${misc:Pre-Depends}
 Multi-Arch: same
-Description: Userspace interface to omap-specific kernel DRM services -- runtime
- This library implements the userspace interface to the omap-specific kernel
- DRM services.  DRM stands for "Direct Rendering Manager", which is the
- kernelspace portion of the "Direct Rendering Infrastructure" (DRI). The DRI is
- currently used on Linux to provide hardware-accelerated OpenGL drivers.
+Description: Userspace interface to msm/kgsl-specific kernel DRM services -- runtime
+ This library implements the userspace interface to the kernel DRM services.
+ DRM stands for "Direct Rendering Manager", which is the kernelspace portion
+ of the "Direct Rendering Infrastructure" (DRI). The DRI is currently used on
+ Linux to provide hardware-accelerated OpenGL drivers.
 
 Package: libdrm-freedreno1-dbg
 Section: debug
@@ -227,7 +227,7 @@ Depends:
  libdrm-freedreno1 (= ${binary:Version}),
  ${misc:Depends},
 Multi-Arch: same
-Description: Userspace interface to omap-specific kernel DRM services -- debugging symbols
+Description: Userspace interface to msm/kgsl-specific kernel DRM services -- debugging symbols
  This library implements the userspace interface to the kernel DRM services.
  DRM stands for "Direct Rendering Manager", which is the kernelspace portion
  of the "Direct Rendering Infrastructure" (DRI). The DRI is currently used on
@@ -243,11 +243,11 @@ Depends:
  ${misc:Depends},
 Pre-Depends: ${misc:Pre-Depends}
 Multi-Arch: same
-Description: Userspace interface to omap-specific kernel DRM services -- runtime
- This library implements the userspace interface to the omap-specific kernel
- DRM services.  DRM stands for "Direct Rendering Manager", which is the
- kernelspace portion of the "Direct Rendering Infrastructure" (DRI). The DRI is
- currently used on Linux to provide hardware-accelerated OpenGL drivers.
+Description: Userspace interface to exynos-specific kernel DRM services -- runtime
+ This library implements the userspace interface to the kernel DRM services.
+ DRM stands for "Direct Rendering Manager", which is the kernelspace portion
+ of the "Direct Rendering Infrastructure" (DRI). The DRI is currently used on
+ Linux to provide hardware-accelerated OpenGL drivers.
 
 Package: libdrm-exynos1-dbg
 Section: debug
@@ -257,7 +257,7 @@ Depends:
  libdrm-exynos1 (= ${binary:Version}),
  ${misc:Depends},
 Multi-Arch: same
-Description: Userspace interface to omap-specific kernel DRM services -- debugging symbols
+Description: Userspace interface to exynos-specific kernel DRM services -- debugging symbols
  This library implements the userspace interface to the kernel DRM services.
  DRM stands for "Direct Rendering Manager", which is the kernelspace portion
  of the "Direct Rendering Infrastructure" (DRI). The DRI is currently used on

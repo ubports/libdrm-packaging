@@ -2,7 +2,7 @@ libdrm (2.4.56-1) UNRELEASED; urgency=medium
 
   * New upstream release.
   * Enable building freedreno and exynos on arm. (Closes: #741509)
-  * Add a patch to hide all private symbols.
+  * Add a squashed patch from upstream to hide all private symbols.
     - 03_hide_symbols.diff
 
  -- Maarten Lankhorst <maarten.lankhorst@ubuntu.com>  Fri, 25 Jul 2014 10:24:34 +0200

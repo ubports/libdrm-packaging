@@ -98,7 +98,7 @@ endif
 	dh_makeshlibs -plibdrm-radeon1 -V'libdrm-radeon1 (>= 2.4.39)' -- -c4
 ifeq ($(ARM), yes)
 	dh_makeshlibs -plibdrm-omap1 -V'libdrm-omap1 (>= 2.4.38)' -- -c4
-	dh_makeshlibs -plibdrm-freedreno1 -V'libdrm-freedreno1' -- -c4
+	dh_makeshlibs -plibdrm-freedreno1 -V'libdrm-freedreno1 (>= 2.4.57)' -- -c4
 	dh_makeshlibs -plibdrm-exynos1 -V'libdrm-exynos1' -- -c4
 endif
 

@@ -1,11 +1,11 @@
-libdrm (2.4.59-1) UNRELEASED; urgency=medium
+libdrm (2.4.59-1) experimental; urgency=medium
 
   * New upstream release.
   * Add libdrm-tegra0 on arm.
   * Update symbols for intel userptr support.
   * Update symbols for freedreno dma-buf support.
 
- -- Maarten Lankhorst <maarten.lankhorst@ubuntu.com>  Wed, 21 Jan 2015 12:29:01 +0100
+ -- Maarten Lankhorst <maarten.lankhorst@ubuntu.com>  Wed, 21 Jan 2015 13:24:22 +0100
 
 libdrm (2.4.56-1) unstable; urgency=medium
 

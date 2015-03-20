@@ -1,3 +1,10 @@
+libdrm (2.4.60-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+  * libdrm-intel1.symbols, libdrm2.symbols: Updated.
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Fri, 20 Mar 2015 08:26:01 +0200
+
 libdrm (2.4.59-1) experimental; urgency=medium
 
   * New upstream release.

@@ -1,3 +1,9 @@
+libdrm (2.4.60-3) UNRELEASED; urgency=medium
+
+  * control: Add a typo in libdrm-tegra0 description.
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Tue, 21 Apr 2015 08:08:08 +0300
+
 libdrm (2.4.60-2) experimental; urgency=medium
 
   [ Maarten Lankhorst ]

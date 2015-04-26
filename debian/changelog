@@ -1,6 +1,12 @@
 libdrm (2.4.60-3) UNRELEASED; urgency=medium
 
+  [ Timo Aaltonen ]
   * control: Add a typo in libdrm-tegra0 description.
+
+  [ Julien Cristau ]
+  * Fix FTBFS on kfreebsd: include <sys/sysctl.h> for sysctlbyname, and use
+    -lbsd to make the tests build (they use getopt, and our libbsd-overlay
+    cflags redirect that to bsd_getopt).
 
  -- Timo Aaltonen <tjaalton@debian.org>  Tue, 21 Apr 2015 08:08:08 +0300
 

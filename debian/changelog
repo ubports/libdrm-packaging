@@ -7,6 +7,7 @@ libdrm (2.4.60-3) UNRELEASED; urgency=medium
   * Fix FTBFS on kfreebsd: include <sys/sysctl.h> for sysctlbyname, and use
     -lbsd to make the tests build (they use getopt, and our libbsd-overlay
     cflags redirect that to bsd_getopt).
+  * Bump shlibs for libraries with new symbols.
 
  -- Timo Aaltonen <tjaalton@debian.org>  Tue, 21 Apr 2015 08:08:08 +0300
 

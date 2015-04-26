@@ -9,6 +9,7 @@ libdrm (2.4.60-3) UNRELEASED; urgency=medium
     cflags redirect that to bsd_getopt).
   * Bump shlibs for libraries with new symbols.
   * Add missing dependency of libdrm-dev on libdrm-tegra0 on arm*.
+  * Let uscan verify tarball signatures.
 
  -- Timo Aaltonen <tjaalton@debian.org>  Tue, 21 Apr 2015 08:08:08 +0300
 

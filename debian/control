@@ -30,6 +30,7 @@ Depends:
  libdrm-omap1 (= ${binary:Version}) [any-arm],
  libdrm-freedreno1 (= ${binary:Version}) [any-arm],
  libdrm-exynos1 (= ${binary:Version}) [any-arm],
+ libdrm-tegra0 (= ${binary:Version}) [any-arm],
  ${misc:Depends},
 Multi-Arch: same
 Replaces:

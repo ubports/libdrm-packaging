@@ -3,6 +3,7 @@ libdrm (2.4.61-1) UNRELEASED; urgency=medium
   * New upstream version.
   * Update symbols file and bump shlibs for libdrm2.
   * Remove duplicate Section fields from debian/control.
+  * Bump Standards-Version to 3.9.6, no changes needed.
 
  -- Sven Joachim <svenjoac@gmx.de>  Fri, 08 May 2015 21:35:41 +0200
 

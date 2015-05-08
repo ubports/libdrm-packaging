@@ -1,6 +1,7 @@
 libdrm (2.4.61-1) UNRELEASED; urgency=medium
 
   * New upstream version.
+  * Update symbols file and bump shlibs for libdrm2.
 
  -- Sven Joachim <svenjoac@gmx.de>  Fri, 08 May 2015 21:35:41 +0200
 

@@ -98,6 +98,7 @@ libdrm.so.2 libdrm2 #MINVER#
  drmModeFreePropertyBlob@Base 2.4.3
  drmModeFreeResources@Base 2.4.3
  drmModeGetConnector@Base 2.4.3
+ drmModeGetConnectorCurrent@Base 2.4.61
  drmModeGetCrtc@Base 2.4.3
  drmModeGetEncoder@Base 2.4.3
  drmModeGetFB@Base 2.4.3
@@ -143,7 +144,6 @@ libdrm.so.2 libdrm2 #MINVER#
  drmSetBusid@Base 2.3.1
  drmSetClientCap@Base 2.4.47
  drmSetContextFlags@Base 2.3.1
- drmSetDebugMsgFunction@Base 2.3.1
  drmSetInterfaceVersion@Base 2.3.1
  drmSetMaster@Base 2.4.3
  drmSetServerInfo@Base 2.3.1

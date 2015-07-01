@@ -3,40 +3,23 @@ From: Julien Cristau <jcristau@debian.org>
 Date: Sun, 26 Apr 2015 11:53:02 +0200
 Subject: [PATCH] Fix headers inclusion in xf86drmMode.c
 
-- config.h needs to be included first
 - add sys/sysctl.h to get sysctlbyname declaration on kFreeBSD
 ---
- xf86drmMode.c | 8 ++++----
- 1 file changed, 4 insertions(+), 4 deletions(-)
+ xf86drmMode.c | 1 +
+ 1 file changed, 1 insertion(+)
 
 diff --git a/xf86drmMode.c b/xf86drmMode.c
-index 61d5e01..de37548 100644
+index f4b8d14..b7e0116 100644
 --- a/xf86drmMode.c
 +++ b/xf86drmMode.c
-@@ -32,6 +32,9 @@
-  * IN THE SOFTWARE.
-  *
-  */
-+#ifdef HAVE_CONFIG_H
-+#include "config.h"
-+#endif
- 
- /*
-  * TODO the types we are after are defined in diffrent headers on diffrent
-@@ -39,12 +42,9 @@
-  */
+@@ -46,6 +46,7 @@
  #include <stdint.h>
+ #include <stdlib.h>
  #include <sys/ioctl.h>
 +#include <sys/sysctl.h>
  #include <stdio.h>
+ #include <stdbool.h>
  
--#ifdef HAVE_CONFIG_H
--#include "config.h"
--#endif
--
- #include "xf86drmMode.h"
- #include "xf86drm.h"
- #include <drm.h>
 -- 
 2.1.4
 

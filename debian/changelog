@@ -15,6 +15,7 @@ libdrm (2.4.62-1) UNRELEASED; urgency=medium
   * Fix kfreebsd patch that caused an FTBFS on Linux/x32: only include
     <sys/sysctl.h> if configure detects it (closes: #787496).  Thanks,
     Thorsten Glaser.
+  * Add build-dep on xutils-dev for xorg-macros.
 
  -- Sven Joachim <svenjoac@gmx.de>  Fri, 08 May 2015 21:35:41 +0200
 

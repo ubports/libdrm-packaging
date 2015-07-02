@@ -1,4 +1,4 @@
-libdrm (2.4.62-1) UNRELEASED; urgency=medium
+libdrm (2.4.62-1) unstable; urgency=medium
 
   [ Sven Joachim ]
   * New upstream release.
@@ -16,8 +16,9 @@ libdrm (2.4.62-1) UNRELEASED; urgency=medium
     <sys/sysctl.h> if configure detects it (closes: #787496).  Thanks,
     Thorsten Glaser.
   * Add build-dep on xutils-dev for xorg-macros.
+  * Cherry-pick upstream patch to let valgrind auto-detection work.
 
- -- Sven Joachim <svenjoac@gmx.de>  Fri, 08 May 2015 21:35:41 +0200
+ -- Julien Cristau <jcristau@debian.org>  Thu, 02 Jul 2015 21:11:21 +0200
 
 libdrm (2.4.60-3) unstable; urgency=medium
 

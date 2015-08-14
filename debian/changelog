@@ -1,6 +1,7 @@
 libdrm (2.4.63-1) UNRELEASED; urgency=medium
 
   * New upstream release.
+    - Drop Fix-headers-inclusion-in-xf86drmMode.c.diff, upstream.
 
  -- Robert Hooker <sarvatt@ubuntu.com>  Fri, 14 Aug 2015 13:15:14 -0400
 

@@ -1,3 +1,9 @@
+libdrm (2.4.63-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Robert Hooker <sarvatt@ubuntu.com>  Fri, 14 Aug 2015 13:15:14 -0400
+
 libdrm (2.4.62-1) unstable; urgency=medium
 
   [ Sven Joachim ]

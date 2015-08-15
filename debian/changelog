@@ -1,10 +1,11 @@
-libdrm (2.4.63-1) UNRELEASED; urgency=medium
+libdrm (2.4.63-1) unstable; urgency=medium
 
+  [ Robert Hooker ]
   * New upstream release.
     - Drop Fix-headers-inclusion-in-xf86drmMode.c.diff, upstream.
   * Add new libdrm-amdgpu1 package.
 
- -- Robert Hooker <sarvatt@ubuntu.com>  Fri, 14 Aug 2015 13:15:14 -0400
+ -- Timo Aaltonen <tjaalton@debian.org>  Sat, 15 Aug 2015 18:55:57 +0300
 
 libdrm (2.4.62-1) unstable; urgency=medium
 

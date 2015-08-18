@@ -1,6 +1,7 @@
 libdrm (2.4.64-1) UNRELEASED; urgency=medium
 
   * New upstream release.
+  * Bump symbols file and shlibs for libdrm-freedreno1.
 
  -- Robert Hooker <sarvatt@ubuntu.com>  Tue, 18 Aug 2015 16:05:01 -0400
 

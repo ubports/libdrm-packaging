@@ -19,6 +19,7 @@ Standards-Version: 3.9.6
 Section: libs
 Vcs-Git: git://anonscm.debian.org/pkg-xorg/lib/libdrm.git
 Vcs-Browser: http://anonscm.debian.org/cgit/pkg-xorg/lib/libdrm.git
+Homepage: http://cgit.freedesktop.org/mesa/drm/
 
 Package: libdrm-dev
 Section: libdevel

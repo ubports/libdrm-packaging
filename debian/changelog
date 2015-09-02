@@ -1,6 +1,7 @@
 libdrm (2.4.64-2) UNRELEASED; urgency=medium
 
   * Enable libdrm-amdgpu1 on kfreebsd-*.
+  * Fix Vcs-* fields.
 
  -- Andreas Boll <andreas.boll.dev@gmail.com>  Mon, 31 Aug 2015 17:41:21 +0200
 

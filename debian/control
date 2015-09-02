@@ -17,8 +17,8 @@ Build-Depends:
  libbsd-dev [kfreebsd-any],
 Standards-Version: 3.9.6
 Section: libs
-Vcs-Git: git://git.debian.org/git/pkg-xorg/lib/libdrm
-Vcs-Browser: http://git.debian.org/?p=pkg-xorg/lib/libdrm.git
+Vcs-Git: git://anonscm.debian.org/pkg-xorg/lib/libdrm.git
+Vcs-Browser: http://anonscm.debian.org/cgit/pkg-xorg/lib/libdrm.git
 
 Package: libdrm-dev
 Section: libdevel

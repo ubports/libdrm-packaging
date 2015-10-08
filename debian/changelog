@@ -1,6 +1,7 @@
 libdrm (2.4.65-1) UNRELEASED; urgency=medium
 
   * New upstream release.
+  * Update debian/upstream/signing-key.asc.
   * Enable libdrm-amdgpu1 on kfreebsd-*.
   * Fix Vcs-* fields.
   * Add upstream url.

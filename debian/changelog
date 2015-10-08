@@ -1,5 +1,6 @@
-libdrm (2.4.64-2) UNRELEASED; urgency=medium
+libdrm (2.4.65-1) UNRELEASED; urgency=medium
 
+  * New upstream release.
   * Enable libdrm-amdgpu1 on kfreebsd-*.
   * Fix Vcs-* fields.
   * Add upstream url.

@@ -105,7 +105,7 @@ endif
 	dh_makeshlibs -plibdrm-amdgpu1 -V'libdrm-amdgpu1 (>= 2.4.63)' -- -c4
 ifeq ($(ARM), yes)
 	dh_makeshlibs -plibdrm-omap1 -V'libdrm-omap1 (>= 2.4.38)' -- -c4
-	dh_makeshlibs -plibdrm-freedreno1 -V'libdrm-freedreno1 (>= 2.4.64)' -- -c4
+	dh_makeshlibs -plibdrm-freedreno1 -V'libdrm-freedreno1 (>= 2.4.65)' -- -c4
 	dh_makeshlibs -plibdrm-exynos1 -V'libdrm-exynos1 (>= 2.4.60)' -- -c4
 	dh_makeshlibs -plibdrm-tegra0 -V'libdrm-tegra0' -- -c4
 endif

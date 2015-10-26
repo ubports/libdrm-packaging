@@ -1,7 +1,11 @@
 libdrm (2.4.65-2) UNRELEASED; urgency=medium
 
+  [ Andreas Boll ]
   * Update libdrm-freedreno1.symbols and shlibs.
   * Drop Debian revision from new symbols in libdrm2.symbols.
+
+  [ Fathi Boudra ]
+  * Enable freedreno build on arm64 architecture.
 
  -- Andreas Boll <andreas.boll.dev@gmail.com>  Mon, 26 Oct 2015 12:41:34 +0100
 

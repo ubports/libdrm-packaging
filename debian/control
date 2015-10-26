@@ -31,7 +31,7 @@ Depends:
  libdrm-nouveau2 (= ${binary:Version}) [linux-any],
  libdrm-amdgpu1 (= ${binary:Version}),
  libdrm-omap1 (= ${binary:Version}) [any-arm],
- libdrm-freedreno1 (= ${binary:Version}) [any-arm],
+ libdrm-freedreno1 (= ${binary:Version}) [any-arm arm64],
  libdrm-exynos1 (= ${binary:Version}) [any-arm],
  libdrm-tegra0 (= ${binary:Version}) [any-arm],
  ${misc:Depends},
@@ -213,7 +213,7 @@ Description: Userspace interface to omap-specific kernel DRM services -- debuggi
  This package provides the debugging symbols for the libdrm-omap1 package.
 
 Package: libdrm-freedreno1
-Architecture: any-arm
+Architecture: any-arm arm64
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
@@ -229,7 +229,7 @@ Description: Userspace interface to msm/kgsl kernel DRM services -- runtime
 Package: libdrm-freedreno1-dbg
 Section: debug
 Priority: extra
-Architecture: any-arm
+Architecture: any-arm arm64
 Depends:
  libdrm-freedreno1 (= ${binary:Version}),
  ${misc:Depends},

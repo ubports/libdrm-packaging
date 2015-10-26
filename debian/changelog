@@ -1,5 +1,6 @@
-libdrm (2.4.65-1) UNRELEASED; urgency=medium
+libdrm (2.4.65-1) unstable; urgency=medium
 
+  [ Andreas Boll ]
   * New upstream release.
   * Update debian/upstream/signing-key.asc.
   * Update symbols file and bump shlibs for libdrm2.
@@ -7,7 +8,7 @@ libdrm (2.4.65-1) UNRELEASED; urgency=medium
   * Fix Vcs-* fields.
   * Add upstream url.
 
- -- Andreas Boll <andreas.boll.dev@gmail.com>  Mon, 31 Aug 2015 17:41:21 +0200
+ -- Timo Aaltonen <tjaalton@debian.org>  Mon, 26 Oct 2015 10:22:57 +0200
 
 libdrm (2.4.64-1) unstable; urgency=medium
 

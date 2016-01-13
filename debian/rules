@@ -109,7 +109,7 @@ ifeq ($(INTEL), yes)
 	dh_makeshlibs -plibdrm-intel1 -V'libdrm-intel1 (>= 2.4.66)' -- -c4
 endif
 ifeq ($(NOUVEAU), yes)
-	dh_makeshlibs -plibdrm-nouveau2 -V'libdrm-nouveau2 (>= 2.4.38)' -- -c4
+	dh_makeshlibs -plibdrm-nouveau2 -V'libdrm-nouveau2 (>= 2.4.66)' -- -c4
 endif
 	dh_makeshlibs -plibdrm-radeon1 -V'libdrm-radeon1 (>= 2.4.39)' -- -c4
 	dh_makeshlibs -plibdrm-amdgpu1 -V'libdrm-amdgpu1 (>= 2.4.63)' -- -c4

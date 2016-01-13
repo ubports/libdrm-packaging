@@ -1,3 +1,9 @@
+libdrm (2.4.66-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Andreas Boll <andreas.boll.dev@gmail.com>  Wed, 13 Jan 2016 11:54:31 +0100
+
 libdrm (2.4.65-3) unstable; urgency=medium
 
   * rules: Bump freedreno shlib back to 2.4.65.

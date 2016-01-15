@@ -1,4 +1,4 @@
-libdrm (2.4.66-1) UNRELEASED; urgency=medium
+libdrm (2.4.66-1) unstable; urgency=medium
 
   * New upstream release.
   * Update symbols file and bump shlibs for libdrm2.
@@ -7,7 +7,7 @@ libdrm (2.4.66-1) UNRELEASED; urgency=medium
   * Drop obsolete Replaces from pre-wheezy.
   * Add myself to Uploaders.
 
- -- Andreas Boll <andreas.boll.dev@gmail.com>  Wed, 13 Jan 2016 11:54:31 +0100
+ -- Andreas Boll <andreas.boll.dev@gmail.com>  Fri, 15 Jan 2016 10:41:05 +0100
 
 libdrm (2.4.65-3) unstable; urgency=medium
 

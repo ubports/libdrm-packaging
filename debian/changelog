@@ -4,6 +4,7 @@ libdrm (2.4.66-1) UNRELEASED; urgency=medium
   * Update symbols file and bump shlibs for libdrm2.
   * Update libdrm-intel1.symbols and shlibs.
   * Update libdrm-nouveau2.symbols and shlibs.
+  * Drop obsolete Replaces from pre-wheezy.
 
  -- Andreas Boll <andreas.boll.dev@gmail.com>  Wed, 13 Jan 2016 11:54:31 +0100
 

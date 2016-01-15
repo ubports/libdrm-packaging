@@ -36,8 +36,6 @@ Depends:
  libdrm-tegra0 (= ${binary:Version}) [any-arm],
  ${misc:Depends},
 Multi-Arch: same
-Replaces:
- linux-libc-dev (<< 2.6.32-10)
 Description: Userspace interface to kernel DRM services -- development files
  This library implements the userspace interface to the kernel DRM
  services.  DRM stands for "Direct Rendering Manager", which is the

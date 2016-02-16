@@ -1,10 +1,10 @@
-libdrm (2.4.67-1) UNRELEASED; urgency=medium
+libdrm (2.4.67-1) unstable; urgency=medium
 
   * New upstream release.
   * patches: Refreshed.
   * libdrm-amdgpu1.symbols: Updated.
 
- -- Timo Aaltonen <tjaalton@debian.org>  Tue, 16 Feb 2016 10:05:33 +0200
+ -- Timo Aaltonen <tjaalton@debian.org>  Tue, 16 Feb 2016 12:14:16 +0200
 
 libdrm (2.4.66-2) unstable; urgency=medium
 

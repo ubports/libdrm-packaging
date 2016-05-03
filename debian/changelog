@@ -1,8 +1,8 @@
-libdrm (2.4.68-1) UNRELEASED; urgency=medium
+libdrm (2.4.68-1) unstable; urgency=medium
 
   * New upstream release. (LP: #1577735)
 
- -- Timo Aaltonen <tjaalton@debian.org>  Tue, 03 May 2016 14:27:40 +0300
+ -- Timo Aaltonen <tjaalton@debian.org>  Tue, 03 May 2016 14:30:06 +0300
 
 libdrm (2.4.67-1) unstable; urgency=medium
 

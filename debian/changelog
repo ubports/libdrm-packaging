@@ -1,6 +1,7 @@
 libdrm (2.4.68-2) UNRELEASED; urgency=medium
 
   * Update debian/upstream/signing-key.asc.
+  * Bump Standards-Version to 3.9.8, no changes needed.
 
  -- Andreas Boll <andreas.boll.dev@gmail.com>  Tue, 10 May 2016 14:45:31 +0200
 

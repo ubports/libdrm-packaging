@@ -34,7 +34,7 @@ Depends:
  libdrm-omap1 (= ${binary:Version}) [any-arm],
  libdrm-freedreno1 (= ${binary:Version}) [any-arm arm64],
  libdrm-exynos1 (= ${binary:Version}) [any-arm],
- libdrm-tegra0 (= ${binary:Version}) [any-arm],
+ libdrm-tegra0 (= ${binary:Version}) [any-arm arm64],
  ${misc:Depends},
 Multi-Arch: same
 Description: Userspace interface to kernel DRM services -- development files
@@ -274,7 +274,7 @@ Description: Userspace interface to exynos-specific kernel DRM services -- debug
  This package provides the debugging symbols for the libdrm-exynos1 package.
 
 Package: libdrm-tegra0
-Architecture: any-arm
+Architecture: any-arm arm64
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
@@ -290,7 +290,7 @@ Description: Userspace interface to tegra-specific kernel DRM services -- runtim
 Package: libdrm-tegra0-dbg
 Section: debug
 Priority: extra
-Architecture: any-arm
+Architecture: any-arm arm64
 Depends:
  libdrm-tegra0 (= ${binary:Version}),
  ${misc:Depends},

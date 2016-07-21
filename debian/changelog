@@ -1,6 +1,7 @@
-libdrm (2.4.68-2) UNRELEASED; urgency=medium
+libdrm (2.4.69-1) UNRELEASED; urgency=medium
 
   [ Andreas Boll ]
+  * New upstream release.
   * Update debian/upstream/signing-key.asc.
   * Bump Standards-Version to 3.9.8, no changes needed.
   * Update watch url to use https instead of http.

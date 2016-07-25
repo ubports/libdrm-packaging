@@ -1,11 +1,11 @@
-libdrm (2.4.70-1) UNRELEASED; urgency=medium
+libdrm (2.4.70-1) unstable; urgency=medium
 
   * New upstream release.
   * Update libdrm-freedreno1.symbols and shlibs.
   * source/local-options: Add more files to extend-diff-ignore option.
     Fixes 17 patch-system-but-direct-changes-in-diff lintian warnings.
 
- -- Andreas Boll <andreas.boll.dev@gmail.com>  Mon, 25 Jul 2016 11:54:36 +0200
+ -- Andreas Boll <andreas.boll.dev@gmail.com>  Mon, 25 Jul 2016 12:32:20 +0200
 
 libdrm (2.4.69-1) unstable; urgency=medium
 

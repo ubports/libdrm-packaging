@@ -131,7 +131,7 @@ ifeq ($(TEGRA), yes)
 	dh_makeshlibs -plibdrm-tegra0 -V'libdrm-tegra0' -- -c4
 endif
 ifeq ($(FREEDRENO), yes)
-	dh_makeshlibs -plibdrm-freedreno1 -V'libdrm-freedreno1 (>= 2.4.65)' -- -c4
+	dh_makeshlibs -plibdrm-freedreno1 -V'libdrm-freedreno1 (>= 2.4.70)' -- -c4
 endif
 
 %:

@@ -24,7 +24,7 @@ Homepage: http://cgit.freedesktop.org/mesa/drm/
 
 Package: libdrm-dev
 Section: libdevel
-Architecture: any
+Architecture: linux-any kfreebsd-any
 Depends:
  libdrm2 (= ${binary:Version}),
  libdrm-intel1 (= ${binary:Version}) [amd64 i386 kfreebsd-amd64 kfreebsd-i386 x32],
@@ -47,7 +47,7 @@ Description: Userspace interface to kernel DRM services -- development files
  This package provides the development environment for libdrm.
 
 Package: libdrm2
-Architecture: any
+Architecture: linux-any kfreebsd-any
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
@@ -65,7 +65,7 @@ Description: Userspace interface to kernel DRM services -- runtime
 Package: libdrm2-udeb
 Package-Type: udeb
 Section: debian-installer
-Architecture: any
+Architecture: linux-any kfreebsd-any
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
@@ -75,7 +75,7 @@ Description: Userspace interface to kernel DRM services -- runtime
 Package: libdrm2-dbg
 Section: debug
 Priority: extra
-Architecture: any
+Architecture: linux-any kfreebsd-any
 Depends:
  libdrm2 (= ${binary:Version}),
  ${misc:Depends},
@@ -150,7 +150,7 @@ Description: Userspace interface to nouveau-specific kernel DRM -- debugging sym
  This package provides the debugging symbols for the libdrm-nouveau2 package.
 
 Package: libdrm-radeon1
-Architecture: any
+Architecture: linux-any kfreebsd-any
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
@@ -166,7 +166,7 @@ Description: Userspace interface to radeon-specific kernel DRM services -- runti
 Package: libdrm-radeon1-dbg
 Section: debug
 Priority: extra
-Architecture: any
+Architecture: linux-any kfreebsd-any
 Depends:
  libdrm-radeon1 (= ${binary:Version}),
  ${misc:Depends},
@@ -305,7 +305,7 @@ Description: Userspace interface to tegra-specific kernel DRM services -- debugg
  This package provides the debugging symbols for the libdrm-tegra0 package.
 
 Package: libdrm-amdgpu1
-Architecture: any
+Architecture: linux-any kfreebsd-any
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
@@ -321,7 +321,7 @@ Description: Userspace interface to amdgpu-specific kernel DRM services -- runti
 Package: libdrm-amdgpu1-dbg
 Section: debug
 Priority: extra
-Architecture: any
+Architecture: linux-any kfreebsd-any
 Depends:
  libdrm-amdgpu1 (= ${binary:Version}),
  ${misc:Depends},

@@ -1,4 +1,4 @@
-libdrm (2.4.71-1) UNRELEASED; urgency=medium
+libdrm (2.4.71-1) unstable; urgency=medium
 
   * New upstream release.
   * Update symbols file and bump shlibs for libdrm2.
@@ -7,7 +7,7 @@ libdrm (2.4.71-1) UNRELEASED; urgency=medium
     the past and won't be useful without the equivalent of the Linux
     Direct Rendering Manager (DRM) subsystem.
 
- -- Andreas Boll <andreas.boll.dev@gmail.com>  Thu, 08 Sep 2016 13:09:49 +0200
+ -- Andreas Boll <andreas.boll.dev@gmail.com>  Thu, 06 Oct 2016 10:31:27 +0200
 
 libdrm (2.4.70-1) unstable; urgency=medium
 

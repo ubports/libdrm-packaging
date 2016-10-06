@@ -2,6 +2,7 @@ libdrm (2.4.71-1) UNRELEASED; urgency=medium
 
   * New upstream release.
   * Update symbols file and bump shlibs for libdrm2.
+  * Update libdrm-intel1.symbols and shlibs.
   * Remove Hurd from the architecture list. It FTBFS, haven't built in
     the past and won't be useful without the equivalent of the Linux
     Direct Rendering Manager (DRM) subsystem.

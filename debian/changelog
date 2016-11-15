@@ -1,11 +1,11 @@
-libdrm (2.4.73-1) UNRELEASED; urgency=medium
+libdrm (2.4.73-1) unstable; urgency=medium
 
   * New upstream release.
   * Bump libdrm2's, libdrm-amdgpu1's, libdrm-freedreno1's and libdrm-
     intel1's symbols and shlibs.
   * Update a bunch of URLs in packaging to https.
 
- -- Andreas Boll <andreas.boll.dev@gmail.com>  Thu, 03 Nov 2016 12:13:24 +0100
+ -- Andreas Boll <andreas.boll.dev@gmail.com>  Tue, 15 Nov 2016 15:43:02 +0100
 
 libdrm (2.4.71-1) unstable; urgency=medium
 

@@ -135,4 +135,4 @@ ifeq ($(FREEDRENO), yes)
 endif
 
 %:
-	dh $@ --with quilt,autoreconf --builddirectory=build/
+	dh $@ --with quilt --builddirectory=build/

@@ -1,4 +1,4 @@
-libdrm (2.4.74-1) UNRELEASED; urgency=medium
+libdrm (2.4.74-1) unstable; urgency=medium
 
   * New upstream release.
   * Update debian/upstream/signing-key.asc.
@@ -6,7 +6,7 @@ libdrm (2.4.74-1) UNRELEASED; urgency=medium
     shlibs.
   * Bump debhelper compat to 10.
 
- -- Andreas Boll <andreas.boll.dev@gmail.com>  Tue, 29 Nov 2016 18:19:05 +0100
+ -- Andreas Boll <andreas.boll.dev@gmail.com>  Tue, 29 Nov 2016 19:01:04 +0100
 
 libdrm (2.4.73-1) unstable; urgency=medium
 

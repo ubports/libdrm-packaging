@@ -2,6 +2,8 @@ libdrm (2.4.74-1) UNRELEASED; urgency=medium
 
   * New upstream release.
   * Update debian/upstream/signing-key.asc.
+  * Bump libdrm2's, libdrm-freedreno1's and libdrm-intel1's symbols and
+    shlibs.
 
  -- Andreas Boll <andreas.boll.dev@gmail.com>  Tue, 29 Nov 2016 18:19:05 +0100
 

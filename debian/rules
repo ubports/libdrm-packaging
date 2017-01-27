@@ -95,9 +95,6 @@ override_dh_auto_configure:
 override_dh_auto_test:
 	dh_auto_test || echo "Test suite failure, but keeping on anyway"
 
-override_dh_auto_install:
-	dh_auto_install --destdir=debian/tmp
-
 override_dh_install:
 	find debian/tmp -name '*.la' -delete
 	dh_install --fail-missing

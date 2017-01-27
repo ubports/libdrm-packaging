@@ -91,28 +91,6 @@ override_dh_install:
 	find debian/tmp -name '*.la' -delete
 	dh_install --fail-missing
 
-override_dh_strip:
-	dh_strip -plibdrm2 --dbg-package=libdrm2-dbg
-ifeq ($(INTEL), yes)
-	dh_strip -plibdrm-intel1 --dbg-package=libdrm-intel1-dbg
-endif
-ifeq ($(NOUVEAU), yes)
-	dh_strip -plibdrm-nouveau2 --dbg-package=libdrm-nouveau2-dbg
-endif
-	dh_strip -plibdrm-radeon1 --dbg-package=libdrm-radeon1-dbg
-	dh_strip -plibdrm-amdgpu1 --dbg-package=libdrm-amdgpu1-dbg
-ifeq ($(ARM), yes)
-	dh_strip -plibdrm-omap1 --dbg-package=libdrm-omap1-dbg
-	dh_strip -plibdrm-exynos1 --dbg-package=libdrm-exynos1-dbg
-endif
-ifeq ($(TEGRA), yes)
-	dh_strip -plibdrm-tegra0 --dbg-package=libdrm-tegra0-dbg
-endif
-ifeq ($(FREEDRENO), yes)
-	dh_strip -plibdrm-freedreno1 --dbg-package=libdrm-freedreno1-dbg
-endif
-	dh_strip -s --remaining-packages
-
 override_dh_makeshlibs:
 	dh_makeshlibs -plibdrm2 -V'libdrm2 (>= 2.4.74)' --add-udeb=libdrm2-udeb -- -c4
 ifeq ($(INTEL), yes)

@@ -5,6 +5,7 @@
 ###
 
 # Some variables:
+DEB_HOST_ARCH     ?= $(shell dpkg-architecture -qDEB_HOST_ARCH)
 DEB_HOST_ARCH_OS  ?= $(shell dpkg-architecture -qDEB_HOST_ARCH_OS)
 DEB_HOST_ARCH_CPU ?= $(shell dpkg-architecture -qDEB_HOST_ARCH_CPU)
 
@@ -52,6 +53,16 @@ ifeq ($(ARM), yes)
 else
 	confflags += --disable-exynos-experimental-api
 	confflags += --disable-omap-experimental-api
+endif
+
+# Etnaviv is on armhf
+ifneq (,$(filter armhf,$(DEB_HOST_ARCH)))
+	ETNAVIV = yes
+endif
+ifeq ($(ETNAVIV), yes)
+	confflags += --enable-etnaviv-experimental-api
+else
+	confflags += --disable-etnaviv-experimental-api
 endif
 
 # Tegra is on arm and arm64
@@ -104,6 +115,9 @@ endif
 ifeq ($(ARM), yes)
 	dh_makeshlibs -plibdrm-omap1 -V'libdrm-omap1 (>= 2.4.38)' -- -c4
 	dh_makeshlibs -plibdrm-exynos1 -V'libdrm-exynos1 (>= 2.4.66)' -- -c4
+endif
+ifeq ($(ETNAVIV), yes)
+	dh_makeshlibs -plibdrm-etnaviv1 -V'libdrm-etnaviv1' -- -c4
 endif
 ifeq ($(TEGRA), yes)
 	dh_makeshlibs -plibdrm-tegra0 -V'libdrm-tegra0' -- -c4

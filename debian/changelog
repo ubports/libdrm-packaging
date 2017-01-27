@@ -1,6 +1,7 @@
 libdrm (2.4.74-2) UNRELEASED; urgency=medium
 
   * Switch to dbgsym packages.
+  * Enable building etnaviv on armhf (Closes: #852685).
 
  -- Andreas Boll <andreas.boll.dev@gmail.com>  Fri, 27 Jan 2017 15:15:41 +0100
 

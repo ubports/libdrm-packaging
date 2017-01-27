@@ -34,6 +34,7 @@ Depends:
  libdrm-freedreno1 (= ${binary:Version}) [any-arm arm64],
  libdrm-exynos1 (= ${binary:Version}) [any-arm],
  libdrm-tegra0 (= ${binary:Version}) [any-arm arm64],
+ libdrm-etnaviv1 (= ${binary:Version}) [armhf],
  ${misc:Depends},
 Multi-Arch: same
 Description: Userspace interface to kernel DRM services -- development files
@@ -176,6 +177,20 @@ Depends:
 Pre-Depends: ${misc:Pre-Depends}
 Multi-Arch: same
 Description: Userspace interface to amdgpu-specific kernel DRM services -- runtime
+ This library implements the userspace interface to the kernel DRM
+ services.  DRM stands for "Direct Rendering Manager", which is the
+ kernelspace portion of the "Direct Rendering Infrastructure" (DRI).
+ The DRI is currently used on Linux to provide hardware-accelerated
+ OpenGL drivers.
+
+Package: libdrm-etnaviv1
+Architecture: armhf
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Pre-Depends: ${misc:Pre-Depends}
+Multi-Arch: same
+Description: Userspace interface to etnaviv-specific kernel DRM services -- runtime
  This library implements the userspace interface to the kernel DRM
  services.  DRM stands for "Direct Rendering Manager", which is the
  kernelspace portion of the "Direct Rendering Infrastructure" (DRI).

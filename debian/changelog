@@ -1,7 +1,11 @@
 libdrm (2.4.74-2) UNRELEASED; urgency=medium
 
+  [ Andreas Boll ]
   * Switch to dbgsym packages.
   * Enable building etnaviv on armhf (Closes: #852685).
+
+  [ Emilio Pozuelo Monfort ]
+  * Stop passing --disable-silent-rules to configure, debhelper does it now.
 
  -- Andreas Boll <andreas.boll.dev@gmail.com>  Fri, 27 Jan 2017 15:15:41 +0100
 

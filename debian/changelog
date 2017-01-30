@@ -1,4 +1,4 @@
-libdrm (2.4.74-2) unstable; urgency=medium
+libdrm (2.4.74-2) experimental; urgency=medium
 
   [ Andreas Boll ]
   * Switch to dbgsym packages.

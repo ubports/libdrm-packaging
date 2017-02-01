@@ -4,10 +4,10 @@ extend-diff-ignore = intel/tests/g.*batch.sh
 ## The following files aren't shipped in the upstream tarball
 
 # Android Makefiles
-extend-diff-ignore = Android\.mk|CleanSpec\.mk
+extend-diff-ignore = Android.*mk|CleanSpec\.mk
 
 # misc. files and scripts used by libdrm developers but not required for the build
-extend-diff-ignore = RELEASING|autogen\.sh|freedreno/kgsl/README
+extend-diff-ignore = \.editorconfig|RELEASING|autogen\.sh|freedreno/kgsl/README
 
 # dead code
-extend-diff-ignore = tests/auth.c|tests/lock.c
+extend-diff-ignore = tests/drmstat\.c

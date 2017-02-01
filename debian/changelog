@@ -3,6 +3,7 @@ libdrm (2.4.75-1) UNRELEASED; urgency=medium
   * New upstream release.
   * Bump libdrm2's and libdrm-intel1's symbols and shlibs.
   * Update extend-diff-ignore.
+  * Add debian/source/format file.
 
  -- Andreas Boll <andreas.boll.dev@gmail.com>  Wed, 01 Feb 2017 15:56:49 +0100
 

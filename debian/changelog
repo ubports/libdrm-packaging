@@ -1,3 +1,10 @@
+libdrm (2.4.75-2) UNRELEASED; urgency=medium
+
+  * Cherry-pick 19c4cfc (intel: Add handle to hashtable before freeing
+    along an error path) from upstream (LP: #1671377).
+
+ -- Andreas Boll <andreas.boll.dev@gmail.com>  Tue, 21 Mar 2017 18:18:31 +0100
+
 libdrm (2.4.75-1) experimental; urgency=medium
 
   * New upstream release.

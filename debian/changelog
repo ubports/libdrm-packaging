@@ -1,3 +1,9 @@
+libdrm (2.4.76-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Andreas Boll <andreas.boll.dev@gmail.com>  Thu, 30 Mar 2017 10:22:45 +0200
+
 libdrm (2.4.75-2) experimental; urgency=medium
 
   * Cherry-pick 19c4cfc (intel: Add handle to hashtable before freeing

@@ -1,6 +1,7 @@
 libdrm (2.4.76-1) UNRELEASED; urgency=medium
 
   * New upstream release.
+  * Update extend-diff-ignore.
 
  -- Andreas Boll <andreas.boll.dev@gmail.com>  Thu, 30 Mar 2017 10:22:45 +0200
 

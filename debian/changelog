@@ -1,3 +1,9 @@
+libdrm (2.4.82-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Wed, 26 Jul 2017 19:18:06 +0200
+
 libdrm (2.4.81-2) unstable; urgency=medium
 
   * Upload to unstable.

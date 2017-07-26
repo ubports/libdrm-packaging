@@ -1,6 +1,7 @@
 libdrm (2.4.82-1) UNRELEASED; urgency=medium
 
   * New upstream release.
+  * debian/upstream/signing-key.asc: add key from Lucas Stach.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Wed, 26 Jul 2017 19:18:06 +0200
 

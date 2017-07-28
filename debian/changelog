@@ -5,6 +5,7 @@ libdrm (2.4.82-1) UNRELEASED; urgency=medium
   * Add libdrm-common package for new data files.
   * debian/*.symbols: add new symbols.
   * debian/rules: Bump shlibs for the libraries with new symbols.
+  * debian/control: Bump Standards-Version to 4.0.0; no changes needed.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Wed, 26 Jul 2017 19:18:06 +0200
 

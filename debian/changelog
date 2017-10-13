@@ -1,9 +1,9 @@
-libdrm (2.4.84-1) UNRELEASED; urgency=medium
+libdrm (2.4.84-1) unstable; urgency=medium
 
   * New upstream release.
   * libdrm2.symbols: Updated.
 
- -- Timo Aaltonen <tjaalton@debian.org>  Fri, 13 Oct 2017 08:59:10 +0300
+ -- Timo Aaltonen <tjaalton@debian.org>  Fri, 13 Oct 2017 09:10:17 +0300
 
 libdrm (2.4.83-1) unstable; urgency=medium
 

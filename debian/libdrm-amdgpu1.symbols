@@ -53,3 +53,5 @@ libdrm_amdgpu.so.1 libdrm-amdgpu1 #MINVER#
  amdgpu_va_range_alloc@Base 2.4.63
  amdgpu_va_range_free@Base 2.4.63
  amdgpu_va_range_query@Base 2.4.63
+ amdgpu_vm_reserve_vmid@Base 2.4.88
+ amdgpu_vm_unreserve_vmid@Base 2.4.88

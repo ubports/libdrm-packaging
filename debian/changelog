@@ -1,9 +1,9 @@
-libdrm (2.4.88-1) UNRELEASED; urgency=medium
+libdrm (2.4.88-1) unstable; urgency=medium
 
   * New upstream release.
   * Update libdrm-amdgpu1.symbols and shlibs.
 
- -- Andreas Boll <andreas.boll.dev@gmail.com>  Tue, 14 Nov 2017 09:48:52 +0100
+ -- Andreas Boll <andreas.boll.dev@gmail.com>  Tue, 14 Nov 2017 10:10:19 +0100
 
 libdrm (2.4.85-1) unstable; urgency=medium
 

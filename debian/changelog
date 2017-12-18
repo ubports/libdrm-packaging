@@ -2,6 +2,7 @@ libdrm (2.4.89-1) UNRELEASED; urgency=medium
 
   * New upstream release.
   * Update libdrm2.symbols and shlibs.
+  * Update libdrm-amdgpu1.symbols and shlibs.
 
  -- Andreas Boll <andreas.boll.dev@gmail.com>  Mon, 18 Dec 2017 16:53:06 +0100
 

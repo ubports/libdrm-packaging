@@ -1,3 +1,9 @@
+libdrm (2.4.89-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Andreas Boll <andreas.boll.dev@gmail.com>  Mon, 18 Dec 2017 16:53:06 +0100
+
 libdrm (2.4.88-1) unstable; urgency=medium
 
   * New upstream release.

@@ -1,4 +1,4 @@
-libdrm (2.4.89-1) UNRELEASED; urgency=medium
+libdrm (2.4.89-1) unstable; urgency=medium
 
   * New upstream release.
   * Update libdrm2.symbols and shlibs.
@@ -7,7 +7,7 @@ libdrm (2.4.89-1) UNRELEASED; urgency=medium
   * Update libdrm-freedreno1.symbols and shlibs.
   * Bump standards version to 4.1.2.
 
- -- Andreas Boll <andreas.boll.dev@gmail.com>  Mon, 18 Dec 2017 16:53:06 +0100
+ -- Andreas Boll <andreas.boll.dev@gmail.com>  Mon, 18 Dec 2017 17:47:40 +0100
 
 libdrm (2.4.88-1) unstable; urgency=medium
 

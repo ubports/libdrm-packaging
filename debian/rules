@@ -100,7 +100,7 @@ override_dh_install:
 	dh_install --fail-missing
 
 override_dh_makeshlibs:
-	dh_makeshlibs -plibdrm2 -V'libdrm2 (>= 2.4.82)' --add-udeb=libdrm2-udeb -- -c4
+	dh_makeshlibs -plibdrm2 -V'libdrm2 (>= 2.4.89)' --add-udeb=libdrm2-udeb -- -c4
 ifeq ($(INTEL), yes)
 	dh_makeshlibs -plibdrm-intel1 -V'libdrm-intel1 (>= 2.4.75)' -- -c4
 endif

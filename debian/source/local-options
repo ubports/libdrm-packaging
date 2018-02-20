@@ -6,5 +6,8 @@ extend-diff-ignore = intel/tests/g.*batch.sh
 # Android Makefiles
 extend-diff-ignore = Android.*mk|CleanSpec\.mk
 
+# Android source files
+extend-diff-ignore = android/gralloc_handle.h
+
 # misc. files and scripts used by libdrm developers but not required for the build
 extend-diff-ignore = \.editorconfig|RELEASING|autogen\.sh|freedreno/kgsl/README

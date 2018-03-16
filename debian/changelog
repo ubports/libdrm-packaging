@@ -1,4 +1,4 @@
-libdrm (2.4.91-2) UNRELEASED; urgency=medium
+libdrm (2.4.91-2) unstable; urgency=medium
 
   * Update libdrm-freedreno1.symbols and shlibs (Closes: #892960).
 

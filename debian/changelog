@@ -1,6 +1,7 @@
 libdrm (2.4.92-1) UNRELEASED; urgency=medium
 
   * New upstream release.
+  * Update libdrm-freedreno1.symbols and shlibs.
 
  -- Andreas Boll <aboll@debian.org>  Fri, 18 May 2018 13:56:54 +0200
 

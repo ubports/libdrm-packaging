@@ -3,6 +3,7 @@ libdrm (2.4.92-1) UNRELEASED; urgency=medium
   * New upstream release.
   * Update libdrm-freedreno1.symbols and shlibs.
   * control: Update to my Debian address.
+  * Update Vcs-* URLs to point at salsa.debian.org.
 
  -- Andreas Boll <aboll@debian.org>  Fri, 18 May 2018 13:56:54 +0200
 

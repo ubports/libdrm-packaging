@@ -55,8 +55,8 @@ else
 	confflags += --disable-omap-experimental-api
 endif
 
-# Etnaviv is on armhf
-ifneq (,$(filter armhf,$(DEB_HOST_ARCH)))
+# Etnaviv is on armhf and arm64
+ifneq (,$(filter armhf arm64,$(DEB_HOST_ARCH)))
 	ETNAVIV = yes
 endif
 ifeq ($(ETNAVIV), yes)

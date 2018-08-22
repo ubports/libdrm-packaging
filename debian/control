@@ -33,7 +33,7 @@ Depends:
  libdrm-freedreno1 (= ${binary:Version}) [any-arm arm64],
  libdrm-exynos1 (= ${binary:Version}) [any-arm],
  libdrm-tegra0 (= ${binary:Version}) [any-arm arm64],
- libdrm-etnaviv1 (= ${binary:Version}) [armhf],
+ libdrm-etnaviv1 (= ${binary:Version}) [armhf arm64],
  ${misc:Depends},
 Multi-Arch: same
 Description: Userspace interface to kernel DRM services -- development files
@@ -199,7 +199,7 @@ Description: Userspace interface to amdgpu-specific kernel DRM services -- runti
  OpenGL drivers.
 
 Package: libdrm-etnaviv1
-Architecture: armhf
+Architecture: armhf arm64
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},

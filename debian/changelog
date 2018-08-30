@@ -5,6 +5,7 @@ libdrm (2.4.94-1) UNRELEASED; urgency=medium
 
   [ Timo Aaltonen ]
   * New upstream release. (LP: #1789924)
+  * Update libdrm-amdgpu1.symbols and shlibs.
 
  -- Guido Günther <agx@sigxcpu.org>  Wed, 22 Aug 2018 10:18:09 +0200
 

@@ -1,4 +1,4 @@
-libdrm (2.4.94-1) UNRELEASED; urgency=medium
+libdrm (2.4.94-1) unstable; urgency=medium
 
   [ Guido Günther ]
   * Enable etnaviv on arm64 (Closes: #906915)
@@ -7,7 +7,7 @@ libdrm (2.4.94-1) UNRELEASED; urgency=medium
   * New upstream release. (LP: #1789924)
   * Update libdrm-amdgpu1.symbols and shlibs.
 
- -- Guido Günther <agx@sigxcpu.org>  Wed, 22 Aug 2018 10:18:09 +0200
+ -- Timo Aaltonen <tjaalton@debian.org>  Thu, 30 Aug 2018 21:18:04 +0300
 
 libdrm (2.4.93-1) unstable; urgency=medium
 

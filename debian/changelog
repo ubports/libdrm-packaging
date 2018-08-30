@@ -1,6 +1,10 @@
-libdrm (2.4.93-2) UNRELEASED; urgency=medium
+libdrm (2.4.94-1) UNRELEASED; urgency=medium
 
+  [ Guido Günther ]
   * Enable etnaviv on arm64 (Closes: #906915)
+
+  [ Timo Aaltonen ]
+  * New upstream release. (LP: #1789924)
 
  -- Guido Günther <agx@sigxcpu.org>  Wed, 22 Aug 2018 10:18:09 +0200
 

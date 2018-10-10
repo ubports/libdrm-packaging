@@ -5,6 +5,7 @@ libdrm (2.4.95-1) UNRELEASED; urgency=medium
 
   [ Andreas Boll ]
   * New upstream release.
+    - Fixes WebGL on Firefox (Closes: #907698).
   * Update libdrm-amdgpu1.symbols and shlibs.
   * Drop static libdrm library from libdrm-dev.
   * Update extend-diff-ignore.

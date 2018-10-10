@@ -2,11 +2,11 @@ libdrm (2.4.95-1) UNRELEASED; urgency=medium
 
   [ Timo Aaltonen ]
   * rules, control: Switch to meson.
-  * enable_static_build.diff: Fix static build with meson.
 
   [ Andreas Boll ]
   * New upstream release.
   * Update libdrm-amdgpu1.symbols and shlibs.
+  * Drop static libdrm library from libdrm-dev.
 
  -- Andreas Boll <aboll@debian.org>  Wed, 10 Oct 2018 11:20:50 +0200
 

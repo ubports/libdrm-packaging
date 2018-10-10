@@ -3,7 +3,6 @@ libdrm (2.4.95-1) UNRELEASED; urgency=medium
   [ Timo Aaltonen ]
   * rules, control: Switch to meson.
   * enable_static_build.diff: Fix static build with meson.
-  * Add-amdgpu_find_bo_by_cpu_mappin.diff: Fix amdgpu symbol check test.
 
   [ Andreas Boll ]
   * New upstream release.

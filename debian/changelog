@@ -1,4 +1,4 @@
-libdrm (2.4.95-1) UNRELEASED; urgency=medium
+libdrm (2.4.95-1) unstable; urgency=medium
 
   [ Timo Aaltonen ]
   * rules, control: Switch to meson.
@@ -10,7 +10,7 @@ libdrm (2.4.95-1) UNRELEASED; urgency=medium
   * Drop static libdrm library from libdrm-dev.
   * Update extend-diff-ignore.
 
- -- Andreas Boll <aboll@debian.org>  Wed, 10 Oct 2018 11:20:50 +0200
+ -- Andreas Boll <aboll@debian.org>  Wed, 10 Oct 2018 11:50:36 +0200
 
 libdrm (2.4.94-1) unstable; urgency=medium
 

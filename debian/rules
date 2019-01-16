@@ -26,9 +26,6 @@ else
 	confflags += -Dvmwgfx=false
 	confflags += -Dnouveau=false
 	NOUVEAU = no
-	# kfreebsd mangles freebsd's sys/types.h
-	confflags += CFLAGS="$(shell pkg-config --cflags libbsd-overlay)"
-	confflags += LDFLAGS="$(shell pkg-config --libs libbsd-overlay)"
 endif
 
 # Intel is only on x86:

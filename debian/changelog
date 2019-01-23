@@ -1,8 +1,13 @@
 libdrm (2.4.97-1) UNRELEASED; urgency=medium
 
+  [ Andreas Boll ]
   * New upstream release.
   * Update libdrm-amdgpu1.symbols and shlibs.
   * Update libdrm-freedreno1.symbols and shlibs.
+
+  [ James Clarke ]
+  * Fix build on GNU/kFreeBSD (Closes: #837034, #909249).
+  * Remove no longer needed build-dep libbsd-overlay.
 
  -- Andreas Boll <aboll@debian.org>  Wed, 23 Jan 2019 11:39:39 +0100
 

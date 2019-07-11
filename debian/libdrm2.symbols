@@ -84,6 +84,7 @@ libdrm.so.2 libdrm2 #MINVER#
  drmHashLookup@Base 2.3.1
  drmHashNext@Base 2.3.1
  drmIoctl@Base 2.4.3
+ drmIsMaster@Base 2.4.99
  drmMalloc@Base 2.3.1
  drmMap@Base 2.3.1
  drmMapBufs@Base 2.3.1
@@ -180,8 +181,12 @@ libdrm.so.2 libdrm2 #MINVER#
  drmSyncobjFDToHandle@Base 2.4.82
  drmSyncobjHandleToFD@Base 2.4.82
  drmSyncobjImportSyncFile@Base 2.4.82
+ drmSyncobjQuery@Base 2.4.99
  drmSyncobjReset@Base 2.4.89
  drmSyncobjSignal@Base 2.4.89
+ drmSyncobjTimelineSignal@Base 2.4.99
+ drmSyncobjTimelineWait@Base 2.4.99
+ drmSyncobjTransfer@Base 2.4.99
  drmSyncobjWait@Base 2.4.84
  drmUnlock@Base 2.3.1
  drmUnmap@Base 2.3.1

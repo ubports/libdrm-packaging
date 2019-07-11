@@ -10,22 +10,25 @@ DEB_HOST_ARCH_OS  ?= $(shell dpkg-architecture -qDEB_HOST_ARCH_OS)
 DEB_HOST_ARCH_CPU ?= $(shell dpkg-architecture -qDEB_HOST_ARCH_CPU)
 
 confflags = \
-	-Dradeon=true \
-	-Damdgpu=true \
-	-Dlibkms=false \
+	--enable-radeon \
+	--enable-amdgpu \
+	--disable-libkms \
 	$()
 
 # Linux vs. the rest:
 ifeq (linux, $(DEB_HOST_ARCH_OS))
-	confflags += -Dudev=true
-	confflags += -Dvmwgfx=true
-	confflags += -Dnouveau=true
+	confflags += --enable-udev
+	confflags += --enable-vmwgfx
+	confflags += --enable-nouveau
 	NOUVEAU = yes
 else
-	confflags += -Dudev=false
-	confflags += -Dvmwgfx=false
-	confflags += -Dnouveau=false
+	confflags += --disable-udev
+	confflags += --disable-vmwgfx
+	confflags += --disable-nouveau
 	NOUVEAU = no
+	# kfreebsd mangles freebsd's sys/types.h
+	confflags += CFLAGS="$(shell pkg-config --cflags libbsd-overlay)"
+	confflags += LDFLAGS="$(shell pkg-config --libs libbsd-overlay)"
 endif
 
 # Intel is only on x86:
@@ -35,9 +38,9 @@ ifneq (,$(filter linux kfreebsd,$(DEB_HOST_ARCH_OS)))
 endif
 endif
 ifeq ($(INTEL), yes)
-	confflags += -Dintel=true
+	confflags += --enable-intel
 else
-	confflags += -Dintel=false
+	confflags += --disable-intel
 endif
 
 # Exynos/Omap/Tegra are only on arm
@@ -45,11 +48,11 @@ ifneq (,$(filter arm,$(DEB_HOST_ARCH_CPU)))
 	ARM = yes
 endif
 ifeq ($(ARM), yes)
-	confflags += -Dexynos=true
-	confflags += -Domap=true
+	confflags += --enable-exynos-experimental-api
+	confflags += --enable-omap-experimental-api
 else
-	confflags += -Dexynos=false
-	confflags += -Domap=false
+	confflags += --disable-exynos-experimental-api
+	confflags += --disable-omap-experimental-api
 endif
 
 # Etnaviv is on armhf and arm64
@@ -57,9 +60,9 @@ ifneq (,$(filter armhf arm64,$(DEB_HOST_ARCH)))
 	ETNAVIV = yes
 endif
 ifeq ($(ETNAVIV), yes)
-	confflags += -Detnaviv=true
+	confflags += --enable-etnaviv-experimental-api
 else
-	confflags += -Detnaviv=false
+	confflags += --disable-etnaviv-experimental-api
 endif
 
 # Tegra is on arm and arm64
@@ -67,9 +70,9 @@ ifneq (,$(filter arm arm64,$(DEB_HOST_ARCH_CPU)))
 	TEGRA = yes
 endif
 ifeq ($(TEGRA), yes)
-	confflags += -Dtegra=true
+	confflags += --enable-tegra-experimental-api
 else
-	confflags += -Dtegra=false
+	confflags += --disable-tegra-experimental-api
 endif
 
 # Freedreno is on arm and arm64
@@ -77,9 +80,9 @@ ifneq (,$(filter arm arm64,$(DEB_HOST_ARCH_CPU)))
 	FREEDRENO = yes
 endif
 ifeq ($(FREEDRENO), yes)
-	confflags += -Dfreedreno=true -Dfreedreno-kgsl=true
+	confflags += --enable-freedreno --enable-freedreno-kgsl
 else
-	confflags += -Dfreedreno=false
+	confflags += --disable-freedreno
 endif
 
 ###
@@ -87,7 +90,7 @@ endif
 ###
 
 override_dh_auto_configure:
-	dh_auto_configure -- $(confflags)
+	dh_auto_configure -- --enable-static=yes $(confflags)
 
 override_dh_auto_test:
 	dh_auto_test || echo "Test suite failure, but keeping on anyway"
@@ -105,7 +108,7 @@ ifeq ($(NOUVEAU), yes)
 	dh_makeshlibs -plibdrm-nouveau2 -V'libdrm-nouveau2 (>= 2.4.66)' -- -c4
 endif
 	dh_makeshlibs -plibdrm-radeon1 -V'libdrm-radeon1 (>= 2.4.39)' -- -c4
-	dh_makeshlibs -plibdrm-amdgpu1 -V'libdrm-amdgpu1 (>= 2.4.97)' -- -c4
+	dh_makeshlibs -plibdrm-amdgpu1 -V'libdrm-amdgpu1 (>= 2.4.94)' -- -c4
 ifeq ($(ARM), yes)
 	dh_makeshlibs -plibdrm-omap1 -V'libdrm-omap1 (>= 2.4.38)' -- -c4
 	dh_makeshlibs -plibdrm-exynos1 -V'libdrm-exynos1 (>= 2.4.66)' -- -c4
@@ -117,10 +120,8 @@ ifeq ($(TEGRA), yes)
 	dh_makeshlibs -plibdrm-tegra0 -V'libdrm-tegra0' -- -c4
 endif
 ifeq ($(FREEDRENO), yes)
-	dh_makeshlibs -plibdrm-freedreno1 -V'libdrm-freedreno1 (>= 2.4.97)' -- -c4
+	dh_makeshlibs -plibdrm-freedreno1 -V'libdrm-freedreno1 (>= 2.4.93)' -- -c4
 endif
 
 %:
-	dh $@ --with quilt \
-		--builddirectory=build/ \
-		--buildsystem=meson
+	dh $@ --with quilt --builddirectory=build/

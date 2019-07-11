@@ -1,3 +1,9 @@
+libdrm (2.4.99-1ubports1) xenial; urgency=medium
+
+  * Import to UBPorts and update to libdrm 2.4.99
+
+ -- TheKit <nekit1000@gmail.com>  Wed, 10 Jul 2019 23:50:31 +0200
+
 libdrm (2.4.97-1) unstable; urgency=medium
 
   [ Andreas Boll ]
